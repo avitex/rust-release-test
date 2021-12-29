@@ -31,6 +31,6 @@ jobs:
             target
           key: ${{ runner.os }}-cargo-${{ matrix.rust-toolchain }}
       - name: Compile and release
-        uses: avitex/rust-build.action@master
+        uses: avitex/rust-release.action@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
