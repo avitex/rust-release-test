@@ -6,7 +6,7 @@ jobs:
   release:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-lastest, macos-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
         rust-toolchain: [stable]
       fail-fast: false
     runs-on: ${{ matrix.os }}
